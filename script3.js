@@ -6,8 +6,8 @@ function draw() {
   var color_precision = 255/precision;
   for (var i=0;i<precision;i++){
     for (var j=0;j<precision;j++){
-      ctx.fillStyle = 'rgb(' + Math.floor(255-color_precision*i) + ',' +
-                       Math.floor(255-color_precision*j) + ',0)';
+      ctx.fillStyle = 'rgb(' + Math.floor(255-color_precision*i*Math.random()) + ',' +
+                       Math.floor(255-color_precision*j*Math.random()) + ',0)';
       ctx.fillRect(j*element_size,i*element_size,element_size,element_size);
     }
   }
