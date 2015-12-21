@@ -1,7 +1,7 @@
 function draw() {
   var ctx = document.getElementById('canvas').getContext('2d');
   var canvas_size = 2000;
-  var precision = 100;
+  var precision = 400;
   var element_size = canvas_size/precision;
   var color_precision = 255/precision;
   for (var i=0;i<precision;i++){
